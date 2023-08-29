@@ -10,6 +10,7 @@ from .gptj import GPTJGPTQForCausalLM
 from .gpt2 import GPT2GPTQForCausalLM
 from .llama import LlamaGPTQForCausalLM
 from .moss import MOSSGPTQForCausalLM
+from .olmo import OlmoGPTQForCausalLM
 from .opt import OPTGPTQForCausalLM
 from .rw import RWGPTQForCausalLM
 from .gpt_bigcode import GPTBigCodeGPTQForCausalLM
@@ -17,12 +18,14 @@ from .baichuan import BaiChuanGPTQForCausalLM
 from .internlm import InternLMGPTQForCausalLM
 from .qwen import QwenGPTQForCausalLM
 
+
 GPTQ_CAUSAL_LM_MODEL_MAP = {
     "bloom": BloomGPTQForCausalLM,
     "gpt_neox": GPTNeoXGPTQForCausalLM,
     "gptj": GPTJGPTQForCausalLM,
     "gpt2": GPT2GPTQForCausalLM,
     "llama": LlamaGPTQForCausalLM,
+    "olmo" : OlmoGPTQForCausalLM,
     "opt": OPTGPTQForCausalLM,
     "moss": MOSSGPTQForCausalLM,
     "gpt_bigcode": GPTBigCodeGPTQForCausalLM,

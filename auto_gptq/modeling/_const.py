@@ -13,6 +13,7 @@ SUPPORTED_MODELS = [
     "gpt2",
     "gpt_neox",
     "opt",
+    "olmo",
     "moss",
     "gpt_bigcode",
     "codegen",
@@ -25,6 +26,4 @@ SUPPORTED_MODELS = [
 if compare_transformers_version("v4.28.0", op="ge"):
     SUPPORTED_MODELS.append("llama")
 
-EXLLAMA_DEFAULT_MAX_INPUT_LENGTH = 2048
-
-__all__ = ["CPU", "CUDA_0", "SUPPORTED_MODELS", "EXLLAMA_DEFAULT_MAX_INPUT_LENGTH"]
+__all__ = ["CPU", "CUDA_0", "SUPPORTED_MODELS"]
